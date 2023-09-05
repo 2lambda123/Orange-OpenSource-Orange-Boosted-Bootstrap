@@ -23,6 +23,17 @@ They are not open-source though and should only be used for Orange branded proje
 <!-- NOTE: this is partially copied from bootstrap Icons homepage → https://icons.getbootstrap.com -->
 Solaris provides both PNGs and SVGs, but we strongly recommend to use SVGs. There are quite a few ways to include SVG icons into your HTML—depending on how your project is setup.
 
+#### Icons rendering
+
+Icons are created in a square layout to preserve icons consistency. This square contains a safe zone to ensure that icons can be used in different sizes and contexts.
+
+<svg width="8em" height="8em" class="bg-body-secondary" aria-hidden="true" focusable="false">
+  <use xlink:href="/docs/{{< param docs_version >}}/assets/img/boosted-sprite.svg#settings"/>
+</svg>
+<svg width="8em" height="8em" class="bg-body-secondary" aria-hidden="true" focusable="false">
+  <use xlink:href="/docs/{{< param docs_version >}}/assets/img/boosted-sprite.svg#info"/>
+</svg>
+
 <div class="row my-4">
   <div class="col-md-4">
 
